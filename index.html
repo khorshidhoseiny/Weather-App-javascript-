@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <title>weather App</title>
+</head>
+<body>
+<div class="card">
+    <div class="search">
+        <input type="text" id="search-bar">
+        <button class="btn-icon"><i class="fas fa-search"></i></button>
+    </div>
+<div class="weather loading">
+    <h1 id="city"></h3>
+    <div class="temp-flex"><h2 class="temp"><h2>°C</h2></h2></div>
+    <div class="flex">
+        <img src="" class="icon-weather" alt="" />
+        <div class="description">ابری</div>
+    </div>
+    
+    <div class="humi">رطوبت :
+        <div ><span class="humidity"></span>%</div>
+    </div>
+    
+    <div id=s>سرعت باد :<div><span class="wind"> 14 </span></div> <span class="km">km/h</span> </div>
+
+    </div>
+</div>
+
+    <script src="js/weather.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js" defer></script>
+</body>
+</html>

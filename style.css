@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url(./fonts/Vazir.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('https://source.unsplash.com/1600x900/?dark');
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Vazir';
+    /* direction: rtl; */
+    /* text-align: right; */
+}
+.city{
+    /* font-size: 45px;; */
+    font-family: 'Balsamiq Sans', cursive;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+}
+.weather.loading::after{
+content: "Loading...";
+visibility: visible;
+color: white;
+}
+.temp-flex{
+    display: flex;
+}
+.card{
+    background: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    background: #0f0f0fef;
+    color: white;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#search-bar,.btn-icon{
+border: none;
+background: #7c7c7c2b;
+color: white;
+outline: none;
+margin: 5px;
+
+}
+.humi{
+    display: flex;
+}
+.km{
+    font-size: .6rem;
+}
+#s{
+    display: flex;
+}
+.description{
+    /* font-size: 19px; */
+    /* font-weight: bold; */
+}
+.icon-weather{
+    font-size: 10rem;
+}
+.btn-icon{
+    padding: .8rem;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    
+
+}
+#search-bar{
+    border-radius: 30px;
+    width: 100%;
+    padding:0 20px;
+    font-size: medium;
+    font-family: 'Vazir';
+    transition: all .2s ease-in-out;
+    
+}
+.btn-icon:hover{
+    background-color: #7c7c7cb4;
+}
+#search-bar:hover{
+    background-color: #7c7c7cb9;
+}
